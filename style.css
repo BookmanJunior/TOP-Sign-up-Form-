@@ -1,0 +1,67 @@
+:root {
+  --banner-container-width: 40vw;
+  --sign-up-container-width: calc(100vw - var(--banner-container-width));
+  --create-account-button-color: #596d48;
+  --input-border-color: #e5e7eb;
+  --background-base-color: #f9fafb;
+  --logo-container-background-color: rgba(0, 0, 0, 0.4);
+  --banner-font-size: 3rem;
+  --base-font-size: 1.3rem;
+  --base-font-size-weight: 550;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.banner-container {
+  width: var(--banner-container-width);
+  background: url("images/background.avif") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--logo-container-background-color);
+  color: white;
+  padding: 10px;
+  font-size: var(--banner-font-size);
+  gap: 5px;
+}
+
+.logo {
+  max-height: 100px;
+  width: auto;
+}
+
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: var(--sign-up-container-width);
+  font-size: var(--base-font-size);
+  font-weight: var(--base-font-size-weight);
+  background-color: var(--background-base-color);
+  padding: 10px;
+}
+
+.sign-up-form-container {
+  background-color: white;
+}
