@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -19,55 +20,86 @@
         <div class="message">
           <p>
             This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
-            now to get started
+            this in your life to help you realize your deepest dreams.
           </p>
+          <p>Sign up now to get started.</p>
           <p>You know you want to.</p>
         </div>
         <div class="sign-up-form-container">
-          <p>Let's do this!</p>
           <form>
             <section class="personal-information">
-              <div>
-                <label for="first-name">First Name</label>
-                <input type="text" name="first_name" id="first-name" required />
-              </div>
-              <div>
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last_name" id="last-name" required />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required />
-              </div>
-              <div>
-                <label for="phone-number">Phone Number</label
-                ><input
-                  type="numeric"
-                  name="phone_number"
-                  id="phone-snumber"
-                  required
-                />
-              </div>
-              <div>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required />
-              </div>
-              <div>
-                <label for="confirm-password">Confirm Password</label>
-                <input
-                  type="password"
-                  name="confirm-password"
-                  id="confirm-password"
-                  required
-                />
+              <p>Let's do this!</p>
+              <div class="personal-information-wrapper">
+                <div>
+                  <label for="first-name">First Name</label>
+                  <input
+                    type="text"
+                    name="first_name"
+                    id="first-name"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="last-name">Last Name</label>
+                  <input
+                    type="text"
+                    name="last_name"
+                    id="last-name"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="phone-number">Phone Number</label
+                  ><input
+                    type="numeric"
+                    name="phone_number"
+                    id="phone-number"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                    required
+                  />
+                  <p class="pwd-msg"></p>
+                </div>
+                <div>
+                  <label for="confirm-password">Confirm Password</label>
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                    placeholder="Confirm Password"
+                    required
+                  />
+                </div>
               </div>
             </section>
-            <section>
+            <section class="create-button-section">
               <div><button type="submit">Create Account</button></div>
-              <p>Already have an account? <a href="#">Log In</a></p>
             </section>
           </form>
+          <p class="account-msg">
+            Already have an account? <a href="#">Log In</a>
+          </p>
         </div>
       </div>
     </div>
