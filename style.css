@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@font-face {
+  font-family: Norse;
+  src: url(fonts/Norse-Bold.otf);
+  font-weight: bold;
+}
 
 :root {
   --banner-container-width: 30vw;
@@ -170,6 +175,7 @@ body {
   background-color: var(--logo-container-background-color);
   color: white;
   padding: 10px;
+  font-family: Norse;
   font-size: var(--banner-font-size);
   gap: 5px;
   position: relative;
