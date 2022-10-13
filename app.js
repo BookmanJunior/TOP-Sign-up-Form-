@@ -10,7 +10,7 @@ function checkPasswordMatch() {
   const msg = document.querySelector(".pwd-msg");
 
   if (password.value !== passwordConfirmationField.value) {
-    msg.textContent = "*Passwords do not match";
+    msg.textContent = "Passwords do not match*";
     msg.style.color = "red";
     changeBorderColor(
       passwordField,
@@ -24,7 +24,7 @@ function checkPasswordMatch() {
     !passwordField.value.match(passPattern) &&
     !passwordConfirmationField.value.match(passPattern)
   ) {
-    msg.textContent = "*Passwords does not meet requirements";
+    msg.textContent = "Password does not meet requirements*";
     msg.style.color = "red";
     changeBorderColor(
       passwordField,
