@@ -251,7 +251,7 @@ form p {
   margin-bottom: 20px;
 }
 .pwd-msg {
-  margin: 0;
+  margin: 5px 0;
   height: 10px;
   width: 150px;
   text-align: left;
