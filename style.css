@@ -197,7 +197,7 @@ body {
 }
 
 .message {
-  width: 660px;
+  width: min(660px, 80%);
   padding-left: 30px;
   margin-bottom: 30px;
 }
@@ -230,7 +230,7 @@ label {
 .personal-information-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
+  width: min(500px, 80%);
   font-size: var(--labels-font-size);
   column-gap: 50px;
   row-gap: 15px;
