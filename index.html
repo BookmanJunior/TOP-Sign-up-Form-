@@ -58,6 +58,7 @@
                     id="email"
                     placeholder="Email"
                     required
+                    pattern="[a-zA-Z0-9-_+.]+@[a-zA-Z-]+\.[a-zA-Z]+(\.|-)?[a-zA-Z]+"
                   />
                 </div>
                 <div>
@@ -78,6 +79,7 @@
                     id="password"
                     placeholder="Password"
                     required
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
                   />
                   <p class="pwd-msg"></p>
                 </div>
@@ -89,6 +91,7 @@
                     id="confirm-password"
                     placeholder="Confirm Password"
                     required
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
                   />
                 </div>
               </div>
