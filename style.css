@@ -197,7 +197,7 @@ body {
 }
 
 .message {
-  width: 670px;
+  width: 660px;
   padding-left: 30px;
   margin-bottom: 30px;
 }
@@ -253,6 +253,8 @@ form p {
 .pwd-msg {
   margin: 0;
   height: 10px;
+  width: 150px;
+  text-align: left;
 }
 
 .create-button-section div,
