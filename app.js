@@ -1,5 +1,7 @@
 const passwordConfirmationField = document.getElementById("confirm-password");
 const passwordField = document.getElementById("password");
+const passPattern =
+  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z])(?=.*\W).{8,}$/g;
 
 passwordConfirmationField.addEventListener("keyup", checkPasswordMatch);
 passwordField.addEventListener("keyup", checkPasswordMatch);
@@ -15,6 +17,21 @@ function checkPasswordMatch() {
       passwordConfirmationField,
       "1px solid rgb(221, 25, 25)"
     );
+    return;
+  }
+
+  if (
+    !passwordField.value.match(passPattern) &&
+    !passwordConfirmationField.value.match(passPattern)
+  ) {
+    msg.textContent = "*Passwords does not meet requirements";
+    msg.style.color = "red";
+    changeBorderColor(
+      passwordField,
+      passwordConfirmationField,
+      "1px solid rgb(221, 25, 25)"
+    );
+    return;
   }
 
   if (
